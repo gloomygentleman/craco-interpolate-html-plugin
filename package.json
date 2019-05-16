@@ -17,7 +17,7 @@
     "react-app-rewired"
   ],
   "dependencies": {
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^4.0.0-beta.5",
     "react-dev-utils": "^9.0.1"
   }
 }
