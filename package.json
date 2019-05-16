@@ -1,0 +1,12 @@
+{
+  "name": "craco-interpolate-html",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/GloomyGentleman/craco-interpolate-html.git",
+  "author": "WonbaeLee <gloomygentleman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "react-dev-utils": "^9.0.1"
+  }
+}
