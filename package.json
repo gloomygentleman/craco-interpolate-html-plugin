@@ -1,11 +1,11 @@
 {
-  "name": "craco-interpolate-html",
-  "version": "0.0.2",
+  "name": "craco-interpolate-html-plugin",
+  "version": "0.0.1",
   "main": "index.js",
   "description": "add html interpolate of create-react-app",
-  "repository": "https://github.com/GloomyGentleman/craco-interpolate-html.git",
+  "repository": "https://github.com/GloomyGentleman/craco-interpolate-html-plugin.git",
   "bugs": {
-    "url": "https://github.com/GloomyGentleman/craco-interpolate-html/issues",
+    "url": "https://github.com/GloomyGentleman/craco-interpolate-html-plugin/issues",
     "email": "gloomygentleman@gmail.com"
   },
   "author": "WonbaeLee <gloomygentleman@gmail.com>",
@@ -14,7 +14,10 @@
     "craco",
     "cra",
     "create-react-app",
-    "react-app-rewired"
+    "react-app-rewired",
+    "html-webpack-plugin",
+    "react-dev-utils",
+    "html-interpolate-plugin"
   ],
   "dependencies": {
     "html-webpack-plugin": "^4.0.0-beta.5",
