@@ -40,7 +40,7 @@ module.exports = {
     <title>Test</title>
   </head>
   <body>
-    <!-- using preTest -->
+    <!-- using preText -->
     <div>%preText%</div>
   </body>
 </html>
