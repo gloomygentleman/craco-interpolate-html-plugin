@@ -11,15 +11,7 @@ module.exports = {
       pluginOptions !== null &&
       Object.prototype.toString(pluginOptions) === '[object Object]'
     ) {
-      if (pluginOptions.hasOwnProperty('dev') && env === 'development') {
-        webpackConfig.plugins.push(new InterpolateHtmlPlugin(htmlWebpackPlugin, pluginOptions.dev));
-      } else if (pluginOptions.hasOwnProperty('prod') && env === 'production') {
-        webpackConfig.plugins.push(
-          new InterpolateHtmlPlugin(htmlWebpackPlugin, pluginOptions.prod)
-        );
-      } else {
-        webpackConfig.plugins.push(new InterpolateHtmlPlugin(htmlWebpackPlugin, pluginOptions));
-      }
+      webpackConfig.plugins.push(new InterpolateHtmlPlugin(htmlWebpackPlugin, pluginOptions));
     } else {
       throw new Error('The craco-interpolate-html plugin is available only for object options');
     }
