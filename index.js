@@ -7,8 +7,6 @@ module.exports = {
   overrideWebpackConfig: ({ webpackConfig, cracoConfig, pluginOptions, context: { env } }) => {
     if (
       pluginOptions &&
-      typeof pluginOptions === 'object' &&
-      pluginOptions !== null &&
       Object.prototype.toString(pluginOptions) === '[object Object]'
     ) {
       webpackConfig.plugins.push(new InterpolateHtmlPlugin(htmlWebpackPlugin, pluginOptions));
