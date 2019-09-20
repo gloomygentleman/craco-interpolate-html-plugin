@@ -1,6 +1,6 @@
 {
   "name": "craco-interpolate-html-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "description": "add html interpolate of create-react-app",
   "repository": "https://github.com/kkulbae/craco-interpolate-html-plugin.git",
