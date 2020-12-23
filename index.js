@@ -14,8 +14,10 @@ module.exports = {
       }
 
       webpackConfig.plugins.push(
-        new InterpolateHtmlPlugin(originInterpolatePlugin.htmlWebpackPlugin || require('html-webpack-plugin')
-        , pluginOptions)
+        new InterpolateHtmlPlugin(
+          originInterpolatePlugin.htmlWebpackPlugin || require('html-webpack-plugin'),
+          pluginOptions
+        )
       );
     } else {
       throw new Error('The craco-interpolate-html plugin is available only for object options');
