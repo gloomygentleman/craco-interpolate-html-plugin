@@ -9,16 +9,11 @@ module.exports = {
         d => d.replacements && d.replacements.NODE_ENV
       );
 
-      if (!originInterpolatePlugin) {
-        console.warn('Could not find react-dev-utils/InterpolateHtmlPlugin.');
-      }
+      const interpolatePlugin =
+        (originInterpolatePlugin && originInterpolatePlugin.htmlWebpackPlugin) ||
+        require('html-webpack-plugin');
 
-      webpackConfig.plugins.push(
-        new InterpolateHtmlPlugin(
-          originInterpolatePlugin.htmlWebpackPlugin || require('html-webpack-plugin'),
-          pluginOptions
-        )
-      );
+      webpackConfig.plugins.push(new InterpolateHtmlPlugin(interpolatePlugin, pluginOptions));
     } else {
       throw new Error('The craco-interpolate-html plugin is available only for object options');
     }
