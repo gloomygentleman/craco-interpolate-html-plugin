@@ -20,7 +20,7 @@
     "html-interpolate-plugin"
   ],
   "peerDependencies": {
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.3.2",
     "react-dev-utils": "11.0.1"
   }
 }
